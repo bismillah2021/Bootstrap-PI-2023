@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Small Medium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+      #judul {
+        margin-top: -70px;
+      }
+      #content-2 {
+        background-color: blue;
+      }
+      #content-3 {
+        background-color: blueviolet;
+      }
+      #content-4 {
+        background-color: rgb(148, 240, 28);
+      }
+      #content-5 {
+        background-color: rgb(228, 138, 20);
+      }
+      #content-6 {
+        background-color: rgb(20, 129, 84);
+      }
+      #content{
+        padding: 2em ;
+      }
+
+      #content-1{
+        margin: 1em;
+      }
+
+      #content-1-number{
+        color: gray;
+        opacity: .25;
+      }
+
+      #content-1-content{
+        padding-top: 0.5em;
+      }
+
+      #content-1-title{
+        font-size: 1.2em;
+      }
+
+      #content-1-time-and-date{
+        color: gray;
+        opacity: .5;
+      }
+
+      #articel-1-content {
+        background-color: blueviolet;
+      }
+      #articel-1-image {
+        background-color: rgb(16, 127, 224);
+      }
+
+      #articel-2-content {
+        background-color: rgb(99, 196, 20);
+      }
+      #articel-2-image {
+        background-color: rgb(177, 124, 27);
+      }
+
+      #articel{
+        background-color: #f7f9ea;
+        padding: 1em 2em;
+      }
+
+      .btn{
+        border-radius: 24px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        #carousel-right {
+          display: none;
+        }
+
+        #carousel {
+          padding: 2em 1em;
+        }
+        #carousel-left-caption {
+          padding: 0 1em;
+        }
+        #carousel-left-button {
+          margin: 0 0;
+        }
+        #discover-and-footer-topic-badges-1{
+          margin: 0.5em 0px;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        #carousel-left-button {
+          margin: 0 0;
+          width: 20%;
+          border-radius: 24%;
+        }
+        #carousel {
+          margin: 2em 0;
+        }
+      }
+
+      #wave {
+        margin-top: -120px;
+      }
+      #discover-and-footer{
+        padding: 1em 2em;
+      }
+
+      #discover-and-footer-topic-badges-1{
+        margin: 0.5em 0px;
+      }
+
+      #discover-and-footer-subscription-title{
+        margin-top: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <!--AWAL SECTION NAVBAR-->
+    <section id="navbar" style="background-color: #fbe192">
+      <nav class="navbar navbar-expand-lg" style="background-color: #fbe192">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" width="30" height="25" class="d-inline-block align-text-top" />
+            <b>Small Medium</b>
+          </a>
+          <ul class="nav justify-content-end navbar-nav collapse navbar-collapse" id="navbarTogglerDemo03">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Write</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-secondary" type="submit" style="border-radius: 24px">Get Started</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <h1 class="display-3">
+                      <strong>Where good ideas find you</strong>
+                    </h1>
+                  </div>
+                  <div id="carousel-left-caption" class="row">
+                    <p>
+                      Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                      <a href="#">Learn More</a>
+                    </p>
+                  </div>
+                  <div id="carousel-left-button" class="row">
+                    <button class="btn btn-warning">Get Started</button>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="gambar.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L1440,32L1440,320L0,320Z"></path></svg>
+    </section>
+    <!--AKHIR SECTION NAVBAR-->
+
+    <!--AWAL SECTION TRENDING-->
+    <section id="trending">
+      <div class="container">
+        <div id="judul" class="row">
+          <h3><img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" /> Trending on Small Medium</h3>
+        </div>
+        <div id="content" class="row">
+          <div id="content-1" class="col-md-4">
+            <div class="row">
+              <div id="content-1-number" class="col-2">
+                <strong><h4>01</h4></strong>
+              </div>
+              <div id="content-1-content" class="col">
+                <div id="content-1-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0;">
+                      <img src="logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top" /> 
+                      David in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="content-1-title" class="row">
+                  <p style="margin-bottom: 0;"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="content-1-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-1" class="col-md-4">
+            <div class="row">
+              <div id="content-1-number" class="col-2">
+                <strong><h4>01</h4></strong>
+              </div>
+              <div id="content-1-content" class="col">
+                <div id="content-1-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0;">
+                      <img src="logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top" /> 
+                      David in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="content-1-title" class="row">
+                  <p style="margin-bottom: 0;"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="content-1-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-1" class="col-md-4">
+            <div class="row">
+              <div id="content-1-number" class="col-2">
+                <strong><h4>01</h4></strong>
+              </div>
+              <div id="content-1-content" class="col">
+                <div id="content-1-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0;">
+                      <img src="logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top" /> 
+                      David in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="content-1-title" class="row">
+                  <p style="margin-bottom: 0;"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="content-1-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-1" class="col-md-4">
+            <div class="row">
+              <div id="content-1-number" class="col-2">
+                <strong><h4>01</h4></strong>
+              </div>
+              <div id="content-1-content" class="col">
+                <div id="content-1-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0;">
+                      <img src="logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top" /> 
+                      David in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="content-1-title" class="row">
+                  <p style="margin-bottom: 0;"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="content-1-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-1" class="col-md-4">
+            <div class="row">
+              <div id="content-1-number" class="col-2">
+                <strong><h4>01</h4></strong>
+              </div>
+              <div id="content-1-content" class="col">
+                <div id="content-1-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0;">
+                      <img src="logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top" /> 
+                      David in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="content-1-title" class="row">
+                  <p style="margin-bottom: 0;"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="content-1-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-1" class="col-md-4">
+            <div class="row">
+              <div id="content-1-number" class="col-2">
+                <strong><h4>01</h4></strong>
+              </div>
+              <div id="content-1-content" class="col">
+                <div id="content-1-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0;">
+                      <img src="logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top" /> 
+                      David in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="content-1-title" class="row">
+                  <p style="margin-bottom: 0;"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="content-1-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin: 0px 0px; height: 3px; opacity: 0.5"/>
+    </section>
+    <!--AKHIR SECTION TRENDING-->
+
+    <!--AWAL SECTION ARTICEL-->
+    <section id="multi-section">
+      <div class="container">
+        <div class="row">
+          <div id="articel" class="col-8">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"> <img src="logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-center" style="margin-right: .5em;"/>David in Skilvul</h5>
+                    <p class="card-text" style="margin-bottom: 0;">
+                      <strong>How to use bootstrap for creating a responsive website</strong>
+                    </p>
+                    <p class="card-text" style="margin-bottom: 0;">Caption Caption Caption Caption Caption Caption</p>
+                    <div class="card-text row">
+                      <div class="col-md-8">
+                        <small class="text-body-secondary">June 13 | 10 min read</small>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"> <img src="logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-center" style="margin-right: .5em;"/>David in Skilvul</h5>
+                    <p class="card-text" style="margin-bottom: 0;">
+                      <strong>How to use bootstrap for creating a responsive website</strong>
+                    </p>
+                    <p class="card-text" style="margin-bottom: 0;">Caption Caption Caption Caption Caption Caption</p>
+                    <div class="card-text row">
+                      <div class="col-md-8">
+                        <small class="text-body-secondary">June 13 | 10 min read</small>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="discover-and-footer" class="col-md-4">
+            <div id="discover-and-footer-title" class="row">
+              <h5>DISCOVER OF MORE WHAT MATTERS TO YOU</h5>
+            </div>
+            <div id="discover-and-footer-topic-badges" class="row align-items-center">
+              <div id="discover-and-footer-topic-badges-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary">Topic</button>
+              </div>
+              <div id="discover-and-footer-topic-badges-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary">Topic</button>
+              </div>
+              <div id="discover-and-footer-topic-badges-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary">Topic</button>
+              </div>
+              <div id="discover-and-footer-topic-badges-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary">Topic</button>
+              </div>
+              <div id="discover-and-footer-topic-badges-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary">Topic</button>
+              </div>
+              <div id="discover-and-footer-topic-badges-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary">Topic</button>
+              </div>
+              
+              <div class="col-6"><a href="#">See all topics</a></div>
+            </div>
+            <div id="discover-and-footer-subscription-title" class="row">
+              <h5>Subscription</h5>
+              <p>Get notified when we publish something new!</p>
+            </div>
+            <div id="discover-and-footer-subscription-content" class="row">
+              <div class="col">
+                <form class="row g-3">
+                  <div class="col-auto">
+                    <label for="inputPassword2" class="visually-hidden">Password</label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="david@gmail.com">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-warning" style="border-radius: 0;">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <hr style="height: 3px; opacity: 0.5" />
+            <div id="footer" class="row align-items-center">
+              <div id="footer-help" class="col-2">
+                <small><strong>Help</strong></small>
+              </div>
+              <div id="footer-status" class="col-2"><small><strong>Status</strong></small></div>
+              <div id="footer-writers" class="col-2"> <small><strong>Writers</strong></small></div>
+              <div id="footer-blog" class="col-2"> <small><strong>Blog</strong></small></div>
+              <div id="footer-privacy" class="col-2"><small><strong>Privacy</strong></small></div>
+              <div id="footer-term" class="col-2"> <small><strong>Term</strong></small></div>
+              <div id="footer-about" class="col-2"> <small><strong>About</strong></small></div>
+              <div class="row">
+                <div class="col" style="margin-top: 1em;">Created with <i class="bi bi-heart-fill"></i> by Salma Adynda Saputri</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--AKHIR SECTION ARTICEL-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
